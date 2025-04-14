@@ -1,0 +1,155 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #4b5563;
+}
+
+p {
+    text-align: center;
+    color: #6b7280;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to right, #6366f1, #ec4899);
+    padding: 3rem 0;
+    color: white;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    background: white;
+    color: #6366f1;
+    padding: 0.8rem 2rem;
+    margin: 0 1rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+    background: #6366f1;
+    color: white;
+}
+
+/* Summary Section */
+.summary-section {
+    margin: 4rem 0;
+}
+
+.summary {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #4b5563;
+    /* Soft slate gray */
+    text-align: center;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Projects Section */
+.projects {
+    margin: 4rem 0;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6366f1;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #ec4899;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.skill-badge {
+    display: inline-block;
+    background-color: #e5e7eb;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    margin: 0.5rem;
+    font-weight: 500;
+}
+
+.skill-badge:hover {
+    background-color: #6366f1;
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
